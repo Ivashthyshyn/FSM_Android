@@ -1,0 +1,105 @@
+{
+  "name": "FSM",
+  "startState": 0,
+  "states": [
+    {
+      "name": "Alarm_Disarmed_AllUnlocked",
+      "alarm": false
+    },
+    {
+      "name": "Alarm_Disarmed_AllLocked",
+      "alarm": false
+    },
+    {
+      "name": "Alarm_Armed_AllLocked",
+      "alarm": true
+    },
+    {
+      "name": "Alarm_Disarmed_DriverUnlocked",
+      "alarm": false
+    }
+  ],
+  "actions": [
+    {
+      "name":"lock",
+      "transitions": [
+        {
+          "from": "Alarm_Disarmed_AllUnlocked",
+          "to": "Alarm_Disarmed_AllLocked"
+        },
+        {
+          "from": "Alarm_Disarmed_DriverUnlocked",
+          "to": "Alarm_Disarmed_AllLocked"
+        },
+        {
+          "from": "Alarm_Disarmed_AllLocked",
+          "to": "Alarm_Disarmed_AllLocked"
+        },
+        {
+          "from": "Alarm_Armed_AllLocked",
+          "to": "Alarm_Armed_AllLocked"
+        }
+      ]},
+    {
+      "name":"lock2",
+      "transitions":[
+        {
+          "from": "Alarm_Disarmed_AllUnlocked",
+          "to": "Alarm_Armed_AllLocked"
+        },
+        {
+          "from": "Alarm_Disarmed_DriverUnlocked",
+          "to": "Alarm_Armed_AllLocked"
+        },
+        {
+          "from": "Alarm_Disarmed_AllLocked",
+          "to": "Alarm_Armed_AllLocked"
+        },
+        {
+          "from": "Alarm_Armed_AllLocked",
+          "to": "Alarm_Armed_AllLocked"
+        }
+      ]},
+    {
+      "name":"unlock",
+      "transitions": [
+        {
+          "from": "Alarm_Disarmed_AllUnlocked",
+          "to": "Alarm_Disarmed_AllUnlocked"
+        },
+        {
+          "from": "Alarm_Disarmed_DriverUnlocked",
+          "to": "Alarm_Disarmed_DriverUnlocked"
+        },
+        {
+          "from": "Alarm_Disarmed_AllLocked",
+          "to": "Alarm_Disarmed_DriverUnlocked"
+        },
+        {
+          "from": "Alarm_Armed_AllLocked",
+          "to": "Alarm_Disarmed_DriverUnlocked"
+        }
+      ]},
+    {
+      "name":"unlock2",
+      "transitions":  [
+        {
+          "from": "Alarm_Disarmed_AllUnlocked",
+          "to": "Alarm_Disarmed_AllUnlocked"
+        },
+        {
+          "from": "Alarm_Disarmed_DriverUnlocked",
+          "to": "Alarm_Disarmed_DriverUnlocked"
+        },
+        {
+          "from": "Alarm_Disarmed_AllLocked",
+          "to": "Alarm_Disarmed_AllUnlocked"
+        },
+        {
+          "from": "Alarm_Armed_AllLocked",
+          "to": "Alarm_Disarmed_AllUnlocked"
+        }
+      ]
+    }
+  ]
+}

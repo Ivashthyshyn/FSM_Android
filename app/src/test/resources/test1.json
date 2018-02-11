@@ -1,0 +1,40 @@
+{
+  "name": "FSM",
+  "startState": 0,
+  "states": [
+    {
+      "name": "State1",
+      "alarm": false
+    },
+    {
+      "name": "State2",
+      "alarm": true
+    }
+  ],
+  "actions": [
+    {
+      "name":"lock",
+      "transitions": [
+        {
+          "from": "State1",
+          "to": "State2"
+        },
+        {
+          "from": "State2",
+          "to": "State2"
+        }
+      ]},
+    {
+      "name":"unlock",
+      "transitions": [
+        {
+          "from": "State2",
+          "to": "State1"
+        },
+        {
+          "from": "State1",
+          "to": "State1"
+        }
+      ]}
+  ]
+}
