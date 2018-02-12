@@ -3,7 +3,7 @@ This is a test task for GlobalLogic.
 
 
 
-Build project:
+	Build project:
 ./gradlew build
 
 	For install and run application:
