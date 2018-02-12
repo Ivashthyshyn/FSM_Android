@@ -19,6 +19,8 @@ The test task is here
 https://drive.google.com/open?id=1Q5MT8RA2-P-KNXto4jI-k7o2kMePP54U
 
 UML diagrams for FSM :
+
+![Alt text](https://drive.google.com/open?id=1cvTR3jCkevLeRDx8BmgRJ9BCuthMAkIT?raw=true "Title"
 https://drive.google.com/open?id=1cvTR3jCkevLeRDx8BmgRJ9BCuthMAkIT
 
 https://drive.google.com/open?id=1_cpTa_FUwqigvsFoBy5EbF0tUv46iXFd
