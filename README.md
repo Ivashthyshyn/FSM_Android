@@ -15,7 +15,10 @@ adb shell am start -n com.example.key.fsm_globallogic/com.example.key.fsm_global
 
 
 
-The test task is here  https://drive.google.com/open?id=1Q5MT8RA2-P-KNXto4jI-k7o2kMePP54U
+The test task is here 
+https://drive.google.com/open?id=1Q5MT8RA2-P-KNXto4jI-k7o2kMePP54U
 
-UML diagrams for FSM : https://drive.google.com/open?id=1cvTR3jCkevLeRDx8BmgRJ9BCuthMAkIT
+UML diagrams for FSM :
+![alt text](https://drive.google.com/open?id=1cvTR3jCkevLeRDx8BmgRJ9BCuthMAkIT)
+
 https://drive.google.com/open?id=1_cpTa_FUwqigvsFoBy5EbF0tUv46iXFd
