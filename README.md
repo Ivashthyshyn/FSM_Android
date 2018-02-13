@@ -19,5 +19,4 @@ This is a test task for GlobalLogic.
 https://drive.google.com/open?id=1Q5MT8RA2-P-KNXto4jI-k7o2kMePP54U
 
 ### UML diagrams for FSM :
-![fsm_diagram_class](https://user-images.githubusercontent.com/25402452/36100013-61a7973a-100d-11e8-80f4-e3d10f4ec8fe.jpeg)
-
+![uml_class_diagram](https://user-images.githubusercontent.com/25402452/36167972-5197751a-1100-11e8-81bf-1521952b2b3f.jpeg)
