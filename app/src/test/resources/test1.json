@@ -1,6 +1,6 @@
 {
   "name": "FSM",
-  "startState": 0,
+  "startState": "State1",
   "states": [
     {
       "name": "State1",

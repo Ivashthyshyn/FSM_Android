@@ -1,6 +1,6 @@
 {
   "name": "FSM",
-  "startState": 0,
+  "startState": "Alarm_Disarmed_AllUnlocked",
   "states": [
     {
       "name": "Alarm_Disarmed_AllUnlocked",
