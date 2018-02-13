@@ -51,9 +51,6 @@ public class FiniteStateMachine {
             }
             JSONArray actionsJSON = jsonObject.getJSONArray("actions");
             JSONArray statesJSON = jsonObject.getJSONArray("states");
-            if (actionsJSON == null | statesJSON == null) {
-                throw new IllegalArgumentException("The json is not valid!");
-            }
             for (int i = 0; i < actionsJSON.length(); i++) {
                 JSONObject jsonActionObject = actionsJSON.getJSONObject(i);
                 JSONArray jsonTransitionsArray = jsonActionObject.getJSONArray("transitions");
